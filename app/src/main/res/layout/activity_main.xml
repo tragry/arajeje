@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +9,103 @@
     tools:context=".MainActivity">
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/loginbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300sp"
+        app:srcCompat="@drawable/login_box" />
+
+    <ImageView
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="535sp"
+        app:srcCompat="@drawable/button_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/labelusername"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#EB360F"
+        android:layout_marginTop="380sp"
+        android:layout_marginLeft="100sp"
+        />
+
+    <EditText
+        android:id="@+id/ed_username"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/labelusername"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textColorHint="#696969"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/labelpassword"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#EB360F"
+        android:layout_below="@id/ed_username"
+        android:layout_marginLeft="100sp"
+        />
+
+    <EditText
+        android:id="@+id/ed_password"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/labelpassword"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:hint="Password"
+        android:layout_height="35dp"
+        android:paddingLeft="5dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#696969"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Your Password?"
+        android:id="@+id/labelforgot"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        />
+
+
+
+
+
+</RelativeLayout>
