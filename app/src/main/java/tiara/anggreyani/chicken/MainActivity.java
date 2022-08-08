@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         EditText edPassword = findViewById(R.id.ed_password);
         ImageView loginButton = findViewById(R.id.loginbutton);
 
+        // Hide ActionBar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -11,10 +11,10 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
         app:srcCompat="@drawable/logo" />
 
     <ImageView
@@ -22,90 +22,81 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300sp"
-        app:srcCompat="@drawable/login_box" />
+        android:layout_marginTop="280sp"
+        app:srcCompat="@drawable/login" />
 
     <ImageView
         android:id="@+id/loginbutton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/labelforgot"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="535sp"
+        android:layout_marginTop="10sp"
         app:srcCompat="@drawable/button_login" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:id="@+id/labelusername"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:textColor="#EB360F"
-        android:layout_marginTop="380sp"
-        android:layout_marginLeft="100sp"
-        />
+        android:layout_below="@+id/loginbox"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="180dp"
+        app:srcCompat="@drawable/username" />
+
+    <ImageView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_username"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="180dp"
+        app:srcCompat="@drawable/password" />
+
+
+    <TextView
+        android:id="@+id/labelforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ed_password"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Your Password?"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/ed_username"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:paddingLeft="5dp"
-        android:layout_below="@+id/labelusername"
-        android:layout_marginLeft="100sp"
-        android:layout_marginRight="100sp"
+        android:layout_below="@+id/user"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/papanlogin"
         android:hint="Username"
+        android:paddingLeft="10dp"
         android:textColor="@color/black"
         android:textColorHint="#696969"
-        android:textSize="14sp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/border"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:id="@+id/labelpassword"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:textColor="#EB360F"
-        android:layout_below="@id/ed_username"
-        android:layout_marginLeft="100sp"
-        />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/ed_password"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="match_parent"
-        android:background="@drawable/border"
-        android:layout_marginTop="4dp"
-        android:layout_below="@+id/labelpassword"
-        android:layout_marginLeft="100sp"
-        android:layout_marginRight="100sp"
-        android:hint="Password"
         android:layout_height="35dp"
-        android:paddingLeft="5dp"
-        android:inputType="textPassword"
+        android:layout_below="@+id/pass"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/papanlogin"
+        android:hint="Password"
+        android:paddingLeft="10dp"
         android:textColor="@color/black"
         android:textColorHint="#696969"
         android:textSize="14sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Your Password?"
-        android:id="@+id/labelforgot"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:textColor="@color/white"
-        android:layout_below="@id/loginbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        />
-
-
-
-
 
 </RelativeLayout>
